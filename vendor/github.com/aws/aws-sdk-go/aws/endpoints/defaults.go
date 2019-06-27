@@ -1833,12 +1833,6 @@ var awsPartition = partition{
 		"kms": service{
 
 			Endpoints: endpoints{
-				"ProdFips": endpoint{
-					Hostname: "kms-fips.ca-central-1.amazonaws.com",
-					CredentialScope: credentialScope{
-						Region: "ca-central-1",
-					},
-				},
 				"ap-east-1":      endpoint{},
 				"ap-northeast-1": endpoint{},
 				"ap-northeast-2": endpoint{},
@@ -3890,6 +3884,12 @@ var awscnPartition = partition{
 			Endpoints: endpoints{
 				"cn-north-1":     endpoint{},
 				"cn-northwest-1": endpoint{},
+			},
+		},
+		"support": service{
+
+			Endpoints: endpoints{
+				"aws-cn-global": endpoint{},
 			},
 		},
 		"swf": service{
